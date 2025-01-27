@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Servidor Express</title>
+</head>
+<body>
+  <h1><%= mensaje %></h1>
+
+  
+  <% if (horaActual >= 20) { %>
+    <!-- Si la hora es mayor o igual a 12, muestra el botón -->
+    <button onclick="window.location.href='/endroute'">Ir a la ruta final</button>
+    <button onclick="window.location.href='/index'">Entrar</button>
+  <% } %>
+</body>
+</html>
